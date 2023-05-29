@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.8.10 on linux)" generated="20230528 22:35:32.559" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.8.10 on linux)" generated="20230529 19:39:17.187" rpa="false" schemaversion="3">
 <suite id="s1" name="TestCases" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases">
 <suite id="s1-s1" name="apiAutomacao" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases/apiAutomacao.robot">
 <test id="s1-s1-t1" name="Verificar se API está online" line="7">
@@ -9,14 +9,14 @@
 <arg>${base_url}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230528 22:35:33.132" level="INFO">GET Request : url=https://serverest.dev/ 
+<msg timestamp="20230529 19:39:17.766" level="INFO">GET Request : url=https://serverest.dev/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230528 22:35:33.133" level="INFO">GET Response : url=https://serverest.dev/ 
+<msg timestamp="20230529 19:39:17.766" level="INFO">GET Response : url=https://serverest.dev/ 
  status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': '1c204fb6574a5af4d5c34be321f1eceb;o=1', 'Date': 'Mon, 29 May 2023 01:35:33 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': 'df75177fc18e6d18427caeaa262aad7a', 'Date': 'Mon, 29 May 2023 22:39:17 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
  body=
 &lt;!-- HTML for static distribution bundle build --&gt;
 &lt;!DOCTYPE html&gt;
@@ -102,169 +102,113 @@
 &lt;/html&gt;
  
  </msg>
-<msg timestamp="20230528 22:35:33.133" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230528 22:35:32.659" endtime="20230528 22:35:33.134"/>
+<msg timestamp="20230529 19:39:17.767" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:17.293" endtime="20230529 19:39:17.767"/>
 </kw>
-<status status="PASS" starttime="20230528 22:35:32.659" endtime="20230528 22:35:33.134"/>
+<status status="PASS" starttime="20230529 19:39:17.292" endtime="20230529 19:39:17.767"/>
 </kw>
-<status status="PASS" starttime="20230528 22:35:32.659" endtime="20230528 22:35:33.134"/>
+<status status="PASS" starttime="20230529 19:39:17.292" endtime="20230529 19:39:17.767"/>
 </test>
-<doc>Casos de Teste da Automaçao de API</doc>
-<status status="PASS" starttime="20230528 22:35:32.574" endtime="20230528 22:35:33.135"/>
-</suite>
-<suite id="s1-s2" name="Carrinho" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases/Carrinho">
-<suite id="s1-s2-s1" name="casesCar" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases/Carrinho/casesCar.robot">
-<test id="s1-s2-s1-t1" name="Cadastrando um carrinho" line="7">
-<kw name="Dado que faço uma request de verificação" library="keywords">
-<kw name="GET" library="RequestsLibrary">
-<var>${RESPONSE}</var>
-<arg>${base_url}</arg>
-<arg>expected_status=200</arg>
-<doc>Sends a GET request.</doc>
-<msg timestamp="20230528 22:35:33.643" level="INFO">GET Request : url=https://serverest.dev/ 
- path_url=/ 
- headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg timestamp="20230528 22:35:33.643" level="INFO">GET Response : url=https://serverest.dev/ 
- status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': 'c68c57e2f1ccfd8be64f69cd8b858286', 'Date': 'Mon, 29 May 2023 01:35:33 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
- body=
-&lt;!-- HTML for static distribution bundle build --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  
-  &lt;title&gt;ServeRest&lt;/title&gt;
-  &lt;link rel="stylesheet" type="text/css" href="./swagger-ui.css" &gt;
-  &lt;link rel="icon" href="/favicon.ico" /&gt;
-  &lt;style&gt;
-    html
-    {
-      box-sizing: border-box;
-      overflow: -moz-scrollbars-vertical;
-      overflow-y: scroll;
-    }
-    *,
-    *:before,
-    *:after
-    {
-      box-sizing: inherit;
-    }
-
-    body {
-      margin:0;
-      background: #fafafa;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0"&gt;
-  &lt;defs&gt;
-    &lt;symbol viewBox="0 0 20 20" id="unlocked"&gt;
-      &lt;path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"&gt;&lt;/path&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="locked"&gt;
-      &lt;path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="close"&gt;
-      &lt;path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="large-arrow"&gt;
-      &lt;path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="large-arrow-down"&gt;
-      &lt;path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/&gt;
-    &lt;/symbol&gt;
-
-
-    &lt;symbol viewBox="0 0 24 24" id="jump-to"&gt;
-      &lt;path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 24 24" id="expand"&gt;
-      &lt;path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/&gt;
-    &lt;/symbol&gt;
-
-  &lt;/defs&gt;
-&lt;/svg&gt;
-
-&lt;div id="swagger-ui"&gt;&lt;/div&gt;
-
-&lt;script src="./swagger-ui-bundle.js"&gt; &lt;/script&gt;
-&lt;script src="./swagger-ui-standalone-preset.js"&gt; &lt;/script&gt;
-&lt;script src="./swagger-ui-init.js"&gt; &lt;/script&gt;
-
-
-
-&lt;style&gt;
-  .swagger-ui .topbar .download-url-wrapper { display: none } 
-  .topbar-wrapper img { content:url(https://user-images.githubusercontent.com/29241659/118382797-365f3900-b5cf-11eb-9c82-0298a5c75b7e.png); width:150px; height:auto; }
-  .swagger-ui .topbar { background-color: #000000; border-bottom: 20px solid #7900e2; }
-&lt;/style&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
- 
- </msg>
-<msg timestamp="20230528 22:35:33.644" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230528 22:35:33.159" endtime="20230528 22:35:33.644"/>
-</kw>
-<status status="PASS" starttime="20230528 22:35:33.159" endtime="20230528 22:35:33.644"/>
-</kw>
-<kw name="Quando faço um cadastro um novo carrinho" library="keywordsCar">
+<test id="s1-s1-t2" name="Acessar Pagina com Login" line="10">
+<kw name="Dado que crio o usuario" library="keywords">
 <kw name="Create Dictionary" library="BuiltIn">
-<var>${HEADERS}</var>
-<arg>Authorization=${TOKEN}</arg>
+<var>${PostUser}</var>
+<arg>nome=teste3</arg>
+<arg>email=teste3@qa.com.br</arg>
+<arg>password=teste</arg>
+<arg>administrador=true</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230528 22:35:33.647" level="FAIL">Variable '${TOKEN}' not found.</msg>
-<status status="FAIL" starttime="20230528 22:35:33.645" endtime="20230528 22:35:33.647"/>
-</kw>
-<kw name="Criando array de produto" library="keywordsCar">
-<var>${ListaProdutos}</var>
-<status status="NOT RUN" starttime="20230528 22:35:33.647" endtime="20230528 22:35:33.647"/>
-</kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${PostCarrinho}</var>
-<arg>produtos=${ListaProdutos}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" starttime="20230528 22:35:33.647" endtime="20230528 22:35:33.647"/>
+<msg timestamp="20230529 19:39:17.770" level="INFO">${PostUser} = {'nome': 'teste3', 'email': 'teste3@qa.com.br', 'password': 'teste', 'administrador': 'true'}</msg>
+<status status="PASS" starttime="20230529 19:39:17.769" endtime="20230529 19:39:17.770"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${RESPONSE}</var>
-<arg>${base_url}carrinhos</arg>
-<arg>json=${PostCarrinho}</arg>
-<arg>headers=${HEADERS}</arg>
+<arg>${base_url}usuarios</arg>
+<arg>json=${PostUser}</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20230528 22:35:33.648" endtime="20230528 22:35:33.648"/>
+<msg timestamp="20230529 19:39:18.174" level="INFO">POST Request : url=https://serverest.dev/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '93', 'Content-Type': 'application/json'} 
+ body=b'{"nome": "teste3", "email": "teste3@qa.com.br", "password": "teste", "administrador": "true"}' 
+ </msg>
+<msg timestamp="20230529 19:39:18.175" level="INFO">POST Response : url=https://serverest.dev/usuarios 
+ status=201, reason=Created 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '1b94753e-ee06-465a-9b61-10a881e6efb7', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '66d0c3ca3185d36174a215ae1cb11030', 'Date': 'Mon, 29 May 2023 22:39:17 GMT', 'Server': 'Google Frontend', 'Content-Length': '82'} 
+ body={
+    "message": "Cadastro realizado com sucesso",
+    "_id": "kHICT8rxmfqIRAnW"
+} 
+ </msg>
+<msg timestamp="20230529 19:39:18.175" level="INFO">${RESPONSE} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:17.771" endtime="20230529 19:39:18.175"/>
 </kw>
-<status status="FAIL" starttime="20230528 22:35:33.644" endtime="20230528 22:35:33.648"/>
+<status status="PASS" starttime="20230529 19:39:17.769" endtime="20230529 19:39:18.176"/>
 </kw>
-<status status="FAIL" starttime="20230528 22:35:33.158" endtime="20230528 22:35:33.648">Variable '${TOKEN}' not found.</status>
+<kw name="Então faço o Login" library="keywords">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${PostLogin}</var>
+<arg>email=teste3@qa.com.br</arg>
+<arg>password=teste</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230529 19:39:18.177" level="INFO">${PostLogin} = {'email': 'teste3@qa.com.br', 'password': 'teste'}</msg>
+<status status="PASS" starttime="20230529 19:39:18.177" endtime="20230529 19:39:18.177"/>
+</kw>
+<kw name="POST" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>${base_url}login</arg>
+<arg>json=${PostLogin}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a POST request.</doc>
+<msg timestamp="20230529 19:39:18.584" level="INFO">POST Request : url=https://serverest.dev/login 
+ path_url=/login 
+ headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '50', 'Content-Type': 'application/json'} 
+ body=b'{"email": "teste3@qa.com.br", "password": "teste"}' 
+ </msg>
+<msg timestamp="20230529 19:39:18.584" level="INFO">POST Response : url=https://serverest.dev/login 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '0e2e2c3f-6322-4002-9dd7-cfc9b2c1d810', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '83f7359006d636d84ea8cc0fb091e25f', 'Date': 'Mon, 29 May 2023 22:39:18 GMT', 'Server': 'Google Frontend', 'Content-Length': '269'} 
+ body={
+    "message": "Login realizado com sucesso",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r7vGQTkLqYnlqcRo"
+} 
+ </msg>
+<msg timestamp="20230529 19:39:18.584" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:18.178" endtime="20230529 19:39:18.584"/>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<var>${TOKEN}</var>
+<arg>${RESPONSE.json()}</arg>
+<arg>authorization</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<msg timestamp="20230529 19:39:18.587" level="INFO">${TOKEN} = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r7vGQTkLqYnlqcRo</msg>
+<status status="PASS" starttime="20230529 19:39:18.585" endtime="20230529 19:39:18.587"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${TOKEN}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20230529 19:39:18.587" level="INFO">${TOKEN} = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r7vGQTkLqYnlqcRo</msg>
+<status status="PASS" starttime="20230529 19:39:18.587" endtime="20230529 19:39:18.587"/>
+</kw>
+<status status="PASS" starttime="20230529 19:39:18.176" endtime="20230529 19:39:18.588"/>
+</kw>
+<status status="PASS" starttime="20230529 19:39:17.768" endtime="20230529 19:39:18.588"/>
 </test>
-<test id="s1-s2-s1-t2" name="Concluindo a compra" line="11">
+<test id="s1-s1-t3" name="Fazer Post de um produto" line="14">
 <kw name="Dado que faço uma request de verificação" library="keywords">
 <kw name="GET" library="RequestsLibrary">
 <var>${RESPONSE}</var>
 <arg>${base_url}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230528 22:35:34.053" level="INFO">GET Request : url=https://serverest.dev/ 
+<msg timestamp="20230529 19:39:18.995" level="INFO">GET Request : url=https://serverest.dev/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230528 22:35:34.054" level="INFO">GET Response : url=https://serverest.dev/ 
+<msg timestamp="20230529 19:39:18.995" level="INFO">GET Response : url=https://serverest.dev/ 
  status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': '8eba03ccfbcbe217160eeaa7783f3e14', 'Date': 'Mon, 29 May 2023 01:35:34 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': 'bd3d7c1ec7c4f8ec56a48e7a180b60fa', 'Date': 'Mon, 29 May 2023 22:39:18 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
  body=
 &lt;!-- HTML for static distribution bundle build --&gt;
 &lt;!DOCTYPE html&gt;
@@ -350,150 +294,18 @@
 &lt;/html&gt;
  
  </msg>
-<msg timestamp="20230528 22:35:34.054" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230528 22:35:33.651" endtime="20230528 22:35:34.054"/>
+<msg timestamp="20230529 19:39:18.996" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:18.590" endtime="20230529 19:39:18.996"/>
 </kw>
-<status status="PASS" starttime="20230528 22:35:33.650" endtime="20230528 22:35:34.054"/>
+<status status="PASS" starttime="20230529 19:39:18.589" endtime="20230529 19:39:18.996"/>
 </kw>
-<kw name="Então concluo a compra" library="keywordsCar">
+<kw name="Quando faço o post de um produto" library="keywords">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${HEADERS}</var>
 <arg>Authorization=${TOKEN}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230528 22:35:34.057" level="FAIL">Variable '${TOKEN}' not found.</msg>
-<status status="FAIL" starttime="20230528 22:35:34.055" endtime="20230528 22:35:34.057"/>
-</kw>
-<kw name="DELETE" library="RequestsLibrary">
-<var>${RESPONSE}</var>
-<arg>${base_url}carrinhos/concluir-compra</arg>
-<arg>headers=${HEADERS}</arg>
-<arg>expected_status=200</arg>
-<doc>Sends a DELETE request.</doc>
-<status status="NOT RUN" starttime="20230528 22:35:34.057" endtime="20230528 22:35:34.058"/>
-</kw>
-<status status="FAIL" starttime="20230528 22:35:34.055" endtime="20230528 22:35:34.058"/>
-</kw>
-<status status="FAIL" starttime="20230528 22:35:33.649" endtime="20230528 22:35:34.058">Variable '${TOKEN}' not found.</status>
-</test>
-<doc>Casos de Teste da Automaçao de API</doc>
-<status status="FAIL" starttime="20230528 22:35:33.139" endtime="20230528 22:35:34.059"/>
-</suite>
-<status status="FAIL" starttime="20230528 22:35:33.136" endtime="20230528 22:35:34.061"/>
-</suite>
-<suite id="s1-s3" name="Produtos" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases/Produtos">
-<suite id="s1-s3-s1" name="casesProducts" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases/Produtos/casesProducts.robot">
-<test id="s1-s3-s1-t1" name="Fazer Post de um produto" line="7">
-<kw name="Dado que faço uma request de verificação" library="keywords">
-<kw name="GET" library="RequestsLibrary">
-<var>${RESPONSE}</var>
-<arg>${base_url}</arg>
-<arg>expected_status=200</arg>
-<doc>Sends a GET request.</doc>
-<msg timestamp="20230528 22:35:34.462" level="INFO">GET Request : url=https://serverest.dev/ 
- path_url=/ 
- headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
- body=None 
- </msg>
-<msg timestamp="20230528 22:35:34.462" level="INFO">GET Response : url=https://serverest.dev/ 
- status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': '48474e7a34a676665972cb15fe8d9ca2', 'Date': 'Mon, 29 May 2023 01:35:34 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
- body=
-&lt;!-- HTML for static distribution bundle build --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  
-  &lt;title&gt;ServeRest&lt;/title&gt;
-  &lt;link rel="stylesheet" type="text/css" href="./swagger-ui.css" &gt;
-  &lt;link rel="icon" href="/favicon.ico" /&gt;
-  &lt;style&gt;
-    html
-    {
-      box-sizing: border-box;
-      overflow: -moz-scrollbars-vertical;
-      overflow-y: scroll;
-    }
-    *,
-    *:before,
-    *:after
-    {
-      box-sizing: inherit;
-    }
-
-    body {
-      margin:0;
-      background: #fafafa;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0"&gt;
-  &lt;defs&gt;
-    &lt;symbol viewBox="0 0 20 20" id="unlocked"&gt;
-      &lt;path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"&gt;&lt;/path&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="locked"&gt;
-      &lt;path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="close"&gt;
-      &lt;path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="large-arrow"&gt;
-      &lt;path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 20 20" id="large-arrow-down"&gt;
-      &lt;path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/&gt;
-    &lt;/symbol&gt;
-
-
-    &lt;symbol viewBox="0 0 24 24" id="jump-to"&gt;
-      &lt;path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/&gt;
-    &lt;/symbol&gt;
-
-    &lt;symbol viewBox="0 0 24 24" id="expand"&gt;
-      &lt;path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/&gt;
-    &lt;/symbol&gt;
-
-  &lt;/defs&gt;
-&lt;/svg&gt;
-
-&lt;div id="swagger-ui"&gt;&lt;/div&gt;
-
-&lt;script src="./swagger-ui-bundle.js"&gt; &lt;/script&gt;
-&lt;script src="./swagger-ui-standalone-preset.js"&gt; &lt;/script&gt;
-&lt;script src="./swagger-ui-init.js"&gt; &lt;/script&gt;
-
-
-
-&lt;style&gt;
-  .swagger-ui .topbar .download-url-wrapper { display: none } 
-  .topbar-wrapper img { content:url(https://user-images.githubusercontent.com/29241659/118382797-365f3900-b5cf-11eb-9c82-0298a5c75b7e.png); width:150px; height:auto; }
-  .swagger-ui .topbar { background-color: #000000; border-bottom: 20px solid #7900e2; }
-&lt;/style&gt;
-&lt;/body&gt;
-
-&lt;/html&gt;
- 
- </msg>
-<msg timestamp="20230528 22:35:34.463" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230528 22:35:34.075" endtime="20230528 22:35:34.463"/>
-</kw>
-<status status="PASS" starttime="20230528 22:35:34.074" endtime="20230528 22:35:34.463"/>
-</kw>
-<kw name="Quando faço o post de um produto" library="keywordsProducts">
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${HEADERS}</var>
-<arg>Authorization=${TOKEN}</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230528 22:35:34.466" level="FAIL">Variable '${TOKEN}' not found.</msg>
-<status status="FAIL" starttime="20230528 22:35:34.464" endtime="20230528 22:35:34.466"/>
+<msg timestamp="20230529 19:39:18.998" level="INFO">${HEADERS} = {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r...</msg>
+<status status="PASS" starttime="20230529 19:39:18.997" endtime="20230529 19:39:18.999"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${PostProduto}</var>
@@ -502,7 +314,8 @@
 <arg>descricao=TesteRequest</arg>
 <arg>quantidade=10</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" starttime="20230528 22:35:34.466" endtime="20230528 22:35:34.466"/>
+<msg timestamp="20230529 19:39:18.999" level="INFO">${PostProduto} = {'nome': 'Teste09', 'preco': '14', 'descricao': 'TesteRequest', 'quantidade': '10'}</msg>
+<status status="PASS" starttime="20230529 19:39:18.999" endtime="20230529 19:39:19.000"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${RESPONSE}</var>
@@ -511,134 +324,82 @@
 <arg>headers=${HEADERS}</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20230528 22:35:34.466" endtime="20230528 22:35:34.466"/>
+<msg timestamp="20230529 19:39:19.403" level="INFO">POST Request : url=https://serverest.dev/produtos 
+ path_url=/produtos 
+ headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r7vGQTkLqYnlqcRo', 'Content-Length': '83', 'Content-Type': 'application/json'} 
+ body=b'{"nome": "Teste09", "preco": "14", "descricao": "TesteRequest", "quantidade": "10"}' 
+ </msg>
+<msg timestamp="20230529 19:39:19.403" level="INFO">POST Response : url=https://serverest.dev/produtos 
+ status=201, reason=Created 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '5ab7c156-1221-42bb-ada1-c14915519320', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '99ae5fe41fc6b63f07e28a7ebf1fbd43', 'Date': 'Mon, 29 May 2023 22:39:18 GMT', 'Server': 'Google Frontend', 'Content-Length': '82'} 
+ body={
+    "message": "Cadastro realizado com sucesso",
+    "_id": "TLXP51WNwgwIlPNR"
+} 
+ </msg>
+<msg timestamp="20230529 19:39:19.404" level="INFO">${RESPONSE} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:19.000" endtime="20230529 19:39:19.404"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${ID_PRODUTO}</var>
 <arg>${RESPONSE.json()}</arg>
 <arg>_id</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<status status="NOT RUN" starttime="20230528 22:35:34.466" endtime="20230528 22:35:34.467"/>
+<msg timestamp="20230529 19:39:19.406" level="INFO">${ID_PRODUTO} = TLXP51WNwgwIlPNR</msg>
+<status status="PASS" starttime="20230529 19:39:19.404" endtime="20230529 19:39:19.406"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${ID_PRODUTO}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="NOT RUN" starttime="20230528 22:35:34.467" endtime="20230528 22:35:34.467"/>
+<msg timestamp="20230529 19:39:19.406" level="INFO">${ID_PRODUTO} = TLXP51WNwgwIlPNR</msg>
+<status status="PASS" starttime="20230529 19:39:19.406" endtime="20230529 19:39:19.406"/>
 </kw>
-<status status="FAIL" starttime="20230528 22:35:34.463" endtime="20230528 22:35:34.467"/>
+<status status="PASS" starttime="20230529 19:39:18.996" endtime="20230529 19:39:19.407"/>
 </kw>
-<kw name="Então valido a existencia do mesmo" library="keywordsProducts">
-<status status="NOT RUN" starttime="20230528 22:35:34.467" endtime="20230528 22:35:34.467"/>
-</kw>
-<status status="FAIL" starttime="20230528 22:35:34.073" endtime="20230528 22:35:34.468">Variable '${TOKEN}' not found.</status>
-</test>
-<doc>Casos de Teste da Automaçao de API</doc>
-<status status="FAIL" starttime="20230528 22:35:34.065" endtime="20230528 22:35:34.468"/>
-</suite>
-<status status="FAIL" starttime="20230528 22:35:34.062" endtime="20230528 22:35:34.470"/>
-</suite>
-<suite id="s1-s4" name="Usuarios" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases/Usuarios">
-<suite id="s1-s4-s1" name="casesUsers" source="/home/vinicius/Documentos/vscode_Automacao/Automacao_API/TestCases/Usuarios/casesUsers.robot">
-<test id="s1-s4-s1-t1" name="Acessar Pagina com Login" line="8">
-<kw name="Dado que crio o usuario" library="KeywordsUser">
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${PostUser}</var>
-<arg>nome=teste3</arg>
-<arg>email=teste3@qa.com.br</arg>
-<arg>password=teste</arg>
-<arg>administrador=true</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230528 22:35:34.482" level="INFO">${PostUser} = {'nome': 'teste3', 'email': 'teste3@qa.com.br', 'password': 'teste', 'administrador': 'true'}</msg>
-<status status="PASS" starttime="20230528 22:35:34.481" endtime="20230528 22:35:34.482"/>
-</kw>
-<kw name="POST" library="RequestsLibrary">
+<kw name="Então valido a existencia do mesmo" library="keywords">
+<kw name="GET" library="RequestsLibrary">
 <var>${RESPONSE}</var>
-<arg>${base_url}usuarios</arg>
-<arg>json=${PostUser}</arg>
-<arg>expected_status=201</arg>
-<doc>Sends a POST request.</doc>
-<msg timestamp="20230528 22:35:34.867" level="INFO">POST Request : url=https://serverest.dev/usuarios 
- path_url=/usuarios 
- headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '93', 'Content-Type': 'application/json'} 
- body=b'{"nome": "teste3", "email": "teste3@qa.com.br", "password": "teste", "administrador": "true"}' 
- </msg>
-<msg timestamp="20230528 22:35:34.868" level="INFO">POST Response : url=https://serverest.dev/usuarios 
- status=201, reason=Created 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '2657c418-3df4-4488-a7fa-883a6aa63979', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': 'eb59da8799619b90686e5e366ad24d11', 'Date': 'Mon, 29 May 2023 01:35:34 GMT', 'Server': 'Google Frontend', 'Content-Length': '82'} 
- body={
-    "message": "Cadastro realizado com sucesso",
-    "_id": "LS9HmlzpRoPeKn4i"
-} 
- </msg>
-<msg timestamp="20230528 22:35:34.869" level="INFO">${RESPONSE} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20230528 22:35:34.482" endtime="20230528 22:35:34.869"/>
-</kw>
-<status status="PASS" starttime="20230528 22:35:34.481" endtime="20230528 22:35:34.869"/>
-</kw>
-<kw name="Então faço o Login" library="KeywordsUser">
-<kw name="Create Dictionary" library="BuiltIn">
-<var>${PostLogin}</var>
-<arg>email=teste3@qa.com.br</arg>
-<arg>password=teste</arg>
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230528 22:35:34.870" level="INFO">${PostLogin} = {'email': 'teste3@qa.com.br', 'password': 'teste'}</msg>
-<status status="PASS" starttime="20230528 22:35:34.870" endtime="20230528 22:35:34.870"/>
-</kw>
-<kw name="POST" library="RequestsLibrary">
-<var>${RESPONSE}</var>
-<arg>${base_url}login</arg>
-<arg>json=${PostLogin}</arg>
+<arg>${base_url}produtos/${ID_PRODUTO}</arg>
 <arg>expected_status=200</arg>
-<doc>Sends a POST request.</doc>
-<msg timestamp="20230528 22:35:35.277" level="INFO">POST Request : url=https://serverest.dev/login 
- path_url=/login 
- headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '50', 'Content-Type': 'application/json'} 
- body=b'{"email": "teste3@qa.com.br", "password": "teste"}' 
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230529 19:39:19.813" level="INFO">GET Request : url=https://serverest.dev/produtos/TLXP51WNwgwIlPNR 
+ path_url=/produtos/TLXP51WNwgwIlPNR 
+ headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
  </msg>
-<msg timestamp="20230528 22:35:35.277" level="INFO">POST Response : url=https://serverest.dev/login 
+<msg timestamp="20230529 19:39:19.813" level="INFO">GET Response : url=https://serverest.dev/produtos/TLXP51WNwgwIlPNR 
  status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': 'a3d9a6a4-7995-4877-a1f9-72b78ba2d633', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '9e88bb88623eb8a255f9799a56cc0dd5', 'Date': 'Mon, 29 May 2023 01:35:35 GMT', 'Server': 'Google Frontend', 'Content-Length': '269'} 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': '82192ed6-eb6c-4a0e-b989-626b3b1ccd53', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': 'eb027261667d284709490cd3b955f0b0', 'Date': 'Mon, 29 May 2023 22:39:19 GMT', 'Server': 'Google Frontend', 'Content-Length': '128'} 
  body={
-    "message": "Login realizado com sucesso",
-    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1MzI0MTM1LCJleHAiOjE2ODUzMjQ3MzV9.kYk71fDSQiVm9_AaExq3vpsEC2TpLL_4rYQrUqEXKpI"
+    "nome": "Teste09",
+    "preco": 14,
+    "descricao": "TesteRequest",
+    "quantidade": 10,
+    "_id": "TLXP51WNwgwIlPNR"
 } 
  </msg>
-<msg timestamp="20230528 22:35:35.277" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230528 22:35:34.870" endtime="20230528 22:35:35.277"/>
+<msg timestamp="20230529 19:39:19.813" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:19.408" endtime="20230529 19:39:19.813"/>
 </kw>
-<kw name="Get From Dictionary" library="Collections">
-<var>${TOKEN}</var>
-<arg>${RESPONSE.json()}</arg>
-<arg>authorization</arg>
-<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20230528 22:35:35.279" level="INFO">${TOKEN} = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1MzI0MTM1LCJleHAiOjE2ODUzMjQ3MzV9.kYk71fDSQiVm9_AaExq3vpsEC2TpLL_4rYQrUqEXKpI</msg>
-<status status="PASS" starttime="20230528 22:35:35.278" endtime="20230528 22:35:35.279"/>
+<status status="PASS" starttime="20230529 19:39:19.407" endtime="20230529 19:39:19.813"/>
 </kw>
-<kw name="Set Suite Variable" library="BuiltIn">
-<arg>${TOKEN}</arg>
-<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20230528 22:35:35.280" level="INFO">${TOKEN} = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1MzI0MTM1LCJleHAiOjE2ODUzMjQ3MzV9.kYk71fDSQiVm9_AaExq3vpsEC2TpLL_4rYQrUqEXKpI</msg>
-<status status="PASS" starttime="20230528 22:35:35.280" endtime="20230528 22:35:35.280"/>
-</kw>
-<status status="PASS" starttime="20230528 22:35:34.869" endtime="20230528 22:35:35.280"/>
-</kw>
-<status status="PASS" starttime="20230528 22:35:34.480" endtime="20230528 22:35:35.281"/>
+<status status="PASS" starttime="20230529 19:39:18.588" endtime="20230529 19:39:19.814"/>
 </test>
-<test id="s1-s4-s1-t2" name="Deletando usuario" line="12">
+<test id="s1-s1-t4" name="Cadastrando um carrinho" line="19">
 <kw name="Dado que faço uma request de verificação" library="keywords">
 <kw name="GET" library="RequestsLibrary">
 <var>${RESPONSE}</var>
 <arg>${base_url}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230528 22:35:35.687" level="INFO">GET Request : url=https://serverest.dev/ 
+<msg timestamp="20230529 19:39:20.223" level="INFO">GET Request : url=https://serverest.dev/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230528 22:35:35.688" level="INFO">GET Response : url=https://serverest.dev/ 
+<msg timestamp="20230529 19:39:20.224" level="INFO">GET Response : url=https://serverest.dev/ 
  status=200, reason=OK 
- headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': 'c0485f130baebb4d4bdc68a66d9fd5e8', 'Date': 'Mon, 29 May 2023 01:35:35 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': '8cd338343a62bb2e435e7ac46b5367da', 'Date': 'Mon, 29 May 2023 22:39:19 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
  body=
 &lt;!-- HTML for static distribution bundle build --&gt;
 &lt;!DOCTYPE html&gt;
@@ -724,35 +485,234 @@
 &lt;/html&gt;
  
  </msg>
-<msg timestamp="20230528 22:35:35.688" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230528 22:35:35.283" endtime="20230528 22:35:35.688"/>
+<msg timestamp="20230529 19:39:20.224" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:19.816" endtime="20230529 19:39:20.224"/>
 </kw>
-<status status="PASS" starttime="20230528 22:35:35.282" endtime="20230528 22:35:35.689"/>
+<status status="PASS" starttime="20230529 19:39:19.815" endtime="20230529 19:39:20.224"/>
 </kw>
-<status status="PASS" starttime="20230528 22:35:35.281" endtime="20230528 22:35:35.689"/>
+<kw name="Quando faço um cadastro um novo carrinho" library="keywords">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADERS}</var>
+<arg>Authorization=${TOKEN}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230529 19:39:20.226" level="INFO">${HEADERS} = {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r...</msg>
+<status status="PASS" starttime="20230529 19:39:20.226" endtime="20230529 19:39:20.226"/>
+</kw>
+<kw name="Criando array de produto" library="keywords">
+<var>${ListaProdutos}</var>
+<kw name="Create List" library="BuiltIn">
+<var>${Produtos}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230529 19:39:20.227" level="INFO">${Produtos} = []</msg>
+<status status="PASS" starttime="20230529 19:39:20.227" endtime="20230529 19:39:20.227"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${ProdutoCarrinho}</var>
+<arg>idProduto=${ID_PRODUTO}</arg>
+<arg>quantidade=2</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230529 19:39:20.228" level="INFO">${ProdutoCarrinho} = {'idProduto': 'TLXP51WNwgwIlPNR', 'quantidade': '2'}</msg>
+<status status="PASS" starttime="20230529 19:39:20.227" endtime="20230529 19:39:20.228"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${Produtos}</arg>
+<arg>${ProdutoCarrinho}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230529 19:39:20.228" endtime="20230529 19:39:20.229"/>
+</kw>
+<return>
+<value>${Produtos}</value>
+<status status="PASS" starttime="20230529 19:39:20.229" endtime="20230529 19:39:20.229"/>
+</return>
+<msg timestamp="20230529 19:39:20.229" level="INFO">${ListaProdutos} = [{'idProduto': 'TLXP51WNwgwIlPNR', 'quantidade': '2'}]</msg>
+<status status="PASS" starttime="20230529 19:39:20.227" endtime="20230529 19:39:20.229"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${PostCarrinho}</var>
+<arg>produtos=${ListaProdutos}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230529 19:39:20.231" level="INFO">${PostCarrinho} = {'produtos': [{'idProduto': 'TLXP51WNwgwIlPNR', 'quantidade': '2'}]}</msg>
+<status status="PASS" starttime="20230529 19:39:20.230" endtime="20230529 19:39:20.231"/>
+</kw>
+<kw name="POST" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>${base_url}carrinhos</arg>
+<arg>json=${PostCarrinho}</arg>
+<arg>headers=${HEADERS}</arg>
+<arg>expected_status=201</arg>
+<doc>Sends a POST request.</doc>
+<msg timestamp="20230529 19:39:20.632" level="INFO">POST Request : url=https://serverest.dev/carrinhos 
+ path_url=/carrinhos 
+ headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r7vGQTkLqYnlqcRo', 'Content-Length': '68', 'Content-Type': 'application/json'} 
+ body=b'{"produtos": [{"idProduto": "TLXP51WNwgwIlPNR", "quantidade": "2"}]}' 
+ </msg>
+<msg timestamp="20230529 19:39:20.632" level="INFO">POST Response : url=https://serverest.dev/carrinhos 
+ status=201, reason=Created 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': 'aee5e710-18a1-4736-84d1-ee3263377257', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': '2438f14208a21a9aa1386a9cc8427f8c', 'Date': 'Mon, 29 May 2023 22:39:20 GMT', 'Server': 'Google Frontend', 'Content-Length': '82'} 
+ body={
+    "message": "Cadastro realizado com sucesso",
+    "_id": "0Uzda34VjGCjGlO8"
+} 
+ </msg>
+<msg timestamp="20230529 19:39:20.633" level="INFO">${RESPONSE} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:20.231" endtime="20230529 19:39:20.633"/>
+</kw>
+<status status="PASS" starttime="20230529 19:39:20.225" endtime="20230529 19:39:20.633"/>
+</kw>
+<status status="PASS" starttime="20230529 19:39:19.814" endtime="20230529 19:39:20.634"/>
+</test>
+<test id="s1-s1-t5" name="Concluindo a compra" line="23">
+<kw name="Dado que faço uma request de verificação" library="keywords">
+<kw name="GET" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>${base_url}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20230529 19:39:21.019" level="INFO">GET Request : url=https://serverest.dev/ 
+ path_url=/ 
+ headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20230529 19:39:21.019" level="INFO">GET Response : url=https://serverest.dev/ 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'text/html; charset=utf-8', 'X-Cloud-Trace-Context': '267b6b7ad46fec9eeb8bbcc36a95ddb1', 'Date': 'Mon, 29 May 2023 22:39:20 GMT', 'Server': 'Google Frontend', 'Content-Length': '3237'} 
+ body=
+&lt;!-- HTML for static distribution bundle build --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  
+  &lt;title&gt;ServeRest&lt;/title&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./swagger-ui.css" &gt;
+  &lt;link rel="icon" href="/favicon.ico" /&gt;
+  &lt;style&gt;
+    html
+    {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+    *,
+    *:before,
+    *:after
+    {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin:0;
+      background: #fafafa;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0"&gt;
+  &lt;defs&gt;
+    &lt;symbol viewBox="0 0 20 20" id="unlocked"&gt;
+      &lt;path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V6h2v-.801C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8z"&gt;&lt;/path&gt;
+    &lt;/symbol&gt;
+
+    &lt;symbol viewBox="0 0 20 20" id="locked"&gt;
+      &lt;path d="M15.8 8H14V5.6C14 2.703 12.665 1 10 1 7.334 1 6 2.703 6 5.6V8H4c-.553 0-1 .646-1 1.199V17c0 .549.428 1.139.951 1.307l1.197.387C5.672 18.861 6.55 19 7.1 19h5.8c.549 0 1.428-.139 1.951-.307l1.196-.387c.524-.167.953-.757.953-1.306V9.199C17 8.646 16.352 8 15.8 8zM12 8H8V5.199C8 3.754 8.797 3 10 3c1.203 0 2 .754 2 2.199V8z"/&gt;
+    &lt;/symbol&gt;
+
+    &lt;symbol viewBox="0 0 20 20" id="close"&gt;
+      &lt;path d="M14.348 14.849c-.469.469-1.229.469-1.697 0L10 11.819l-2.651 3.029c-.469.469-1.229.469-1.697 0-.469-.469-.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-.469-.469-.469-1.228 0-1.697.469-.469 1.228-.469 1.697 0L10 8.183l2.651-3.031c.469-.469 1.228-.469 1.697 0 .469.469.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c.469.469.469 1.229 0 1.698z"/&gt;
+    &lt;/symbol&gt;
+
+    &lt;symbol viewBox="0 0 20 20" id="large-arrow"&gt;
+      &lt;path d="M13.25 10L6.109 2.58c-.268-.27-.268-.707 0-.979.268-.27.701-.27.969 0l7.83 7.908c.268.271.268.709 0 .979l-7.83 7.908c-.268.271-.701.27-.969 0-.268-.269-.268-.707 0-.979L13.25 10z"/&gt;
+    &lt;/symbol&gt;
+
+    &lt;symbol viewBox="0 0 20 20" id="large-arrow-down"&gt;
+      &lt;path d="M17.418 6.109c.272-.268.709-.268.979 0s.271.701 0 .969l-7.908 7.83c-.27.268-.707.268-.979 0l-7.908-7.83c-.27-.268-.27-.701 0-.969.271-.268.709-.268.979 0L10 13.25l7.418-7.141z"/&gt;
+    &lt;/symbol&gt;
+
+
+    &lt;symbol viewBox="0 0 24 24" id="jump-to"&gt;
+      &lt;path d="M19 7v4H5.83l3.58-3.59L8 6l-6 6 6 6 1.41-1.41L5.83 13H21V7z"/&gt;
+    &lt;/symbol&gt;
+
+    &lt;symbol viewBox="0 0 24 24" id="expand"&gt;
+      &lt;path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/&gt;
+    &lt;/symbol&gt;
+
+  &lt;/defs&gt;
+&lt;/svg&gt;
+
+&lt;div id="swagger-ui"&gt;&lt;/div&gt;
+
+&lt;script src="./swagger-ui-bundle.js"&gt; &lt;/script&gt;
+&lt;script src="./swagger-ui-standalone-preset.js"&gt; &lt;/script&gt;
+&lt;script src="./swagger-ui-init.js"&gt; &lt;/script&gt;
+
+
+
+&lt;style&gt;
+  .swagger-ui .topbar .download-url-wrapper { display: none } 
+  .topbar-wrapper img { content:url(https://user-images.githubusercontent.com/29241659/118382797-365f3900-b5cf-11eb-9c82-0298a5c75b7e.png); width:150px; height:auto; }
+  .swagger-ui .topbar { background-color: #000000; border-bottom: 20px solid #7900e2; }
+&lt;/style&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+ 
+ </msg>
+<msg timestamp="20230529 19:39:21.020" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:20.635" endtime="20230529 19:39:21.020"/>
+</kw>
+<status status="PASS" starttime="20230529 19:39:20.635" endtime="20230529 19:39:21.020"/>
+</kw>
+<kw name="Então concluo a compra" library="keywords">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${HEADERS}</var>
+<arg>Authorization=${TOKEN}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230529 19:39:21.022" level="INFO">${HEADERS} = {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r...</msg>
+<status status="PASS" starttime="20230529 19:39:21.021" endtime="20230529 19:39:21.022"/>
+</kw>
+<kw name="DELETE" library="RequestsLibrary">
+<var>${RESPONSE}</var>
+<arg>${base_url}carrinhos/concluir-compra</arg>
+<arg>headers=${HEADERS}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a DELETE request.</doc>
+<msg timestamp="20230529 19:39:21.399" level="INFO">DELETE Request : url=https://serverest.dev/carrinhos/concluir-compra 
+ path_url=/carrinhos/concluir-compra 
+ headers={'User-Agent': 'python-requests/2.22.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlM0BxYS5jb20uYnIiLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNjg1Mzk5OTU4LCJleHAiOjE2ODU0MDA1NTh9.FH-gZ5JFoIL5cpF5EBsCrbrTg_8r7vGQTkLqYnlqcRo', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20230529 19:39:21.399" level="INFO">DELETE Response : url=https://serverest.dev/carrinhos/concluir-compra 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'x-moesif-transaction-id': 'a9df6c85-d164-43a2-ada3-7c856217a6f5', 'content-type': 'application/json; charset=utf-8', 'X-Cloud-Trace-Context': 'fc7425fc2422b483fc6c70115189ad9c', 'Date': 'Mon, 29 May 2023 22:39:21 GMT', 'Server': 'Google Frontend', 'Content-Length': '51'} 
+ body={
+    "message": "Registro excluído com sucesso"
+} 
+ </msg>
+<msg timestamp="20230529 19:39:21.400" level="INFO">${RESPONSE} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230529 19:39:21.022" endtime="20230529 19:39:21.400"/>
+</kw>
+<status status="PASS" starttime="20230529 19:39:21.020" endtime="20230529 19:39:21.400"/>
+</kw>
+<status status="PASS" starttime="20230529 19:39:20.634" endtime="20230529 19:39:21.400"/>
 </test>
 <doc>Casos de Teste da Automaçao de API</doc>
-<status status="PASS" starttime="20230528 22:35:34.473" endtime="20230528 22:35:35.690"/>
+<status status="PASS" starttime="20230529 19:39:17.202" endtime="20230529 19:39:21.402"/>
 </suite>
-<status status="PASS" starttime="20230528 22:35:34.470" endtime="20230528 22:35:35.691"/>
-</suite>
-<status status="FAIL" starttime="20230528 22:35:32.560" endtime="20230528 22:35:35.693"/>
+<status status="PASS" starttime="20230529 19:39:17.188" endtime="20230529 19:39:21.404"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="3" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="3" skip="0" id="s1" name="TestCases">TestCases</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="apiAutomacao">TestCases.apiAutomacao</stat>
-<stat pass="0" fail="2" skip="0" id="s1-s2" name="Carrinho">TestCases.Carrinho</stat>
-<stat pass="0" fail="2" skip="0" id="s1-s2-s1" name="casesCar">TestCases.Carrinho.casesCar</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s3" name="Produtos">TestCases.Produtos</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s3-s1" name="casesProducts">TestCases.Produtos.casesProducts</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s4" name="Usuarios">TestCases.Usuarios</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s4-s1" name="casesUsers">TestCases.Usuarios.casesUsers</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="apiAutomacao">TestCases.apiAutomacao</stat>
 </suite>
 </statistics>
 <errors>
